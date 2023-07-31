@@ -26,8 +26,8 @@ var bcrptjs = require("bcryptjs");
             host: "sandbox.smtp.mailtrap.io",
             port: 2525,
             auth: {
-              user: "afc6183cf593f2",
-              pass: "a989c249de67b4"
+              user: process.env.user,
+              pass: process.env.pass
             }
           });
           let typeofemail="";
