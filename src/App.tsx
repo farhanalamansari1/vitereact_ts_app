@@ -11,7 +11,7 @@ import SmsMarketing from "./components/pages/SmsMarketing";
 import SignupPage from "./components/pages/signup/SignupPage";
 import LoginPage from "./components/pages/login/Login"; 
 import Passwordforget from "./components/pages/ForgetPassword";
-import ResetPassword from "./components/pages/ResetPassword";
+import VerifyEmailPage from "./components/pages/verifyemail/page";
 function App() {
   
 
@@ -31,7 +31,8 @@ function App() {
       <Route path="/Delivery" element={<Delivery/>}/>
       <Route path="/Store" element={<Store/>}/>
       <Route path="/marketing" element={<SmsMarketing/>}/>
-      <Route path="/verifyemail" element={<ResetPassword/>}/>
+      <Route path="/verifyemail" element={<VerifyEmailPage/>}/>
+      <Route path="/resetPassword" element={<VerifyEmailPage/>}/>
   </Routes>
     </Container>
     </ShoppingCartProvider>

@@ -140,4 +140,31 @@ catch(error){
 
 })
 
+//verify email
+router.post('/verifyemail',async(req,resp)=>{
+  try {
+    let success=false;  
+    const token = req.body.token;
+        // const { token } = reqBody;
+        console.log(token,"token from rq body")
+        const user = await User.findOne({
+          verifyToken: token,
+          verifyTokenExpiry: { $gt: Date.now() }
+      });
+      if(!user){
+        return resp.status(400).json({success,error:"Sorry User not exist"})
+      }
+      user.isVerified=true;
+      user.verifyToken=undefined;
+      user.verifyTokenExpiry=undefined;
+      await user.save();
+      success=true;
+      return resp.json({success,user});
+
+  } catch (error) {
+    console.log(error.message)
+  resp.status(500).send("Internal Server Error occured")
+  }
+})
+
 module.exports=router;
