@@ -1,0 +1,38 @@
+{
+  "name": "inote-backend",
+  "version": "1.0.0",
+  "description": "MERN BASED APP",
+  "main": "index.js",
+  "scripts": {
+    "start": "set NODE_ENV=dev && node index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/farhanalamansari1/inotebook-backend.git"
+  },
+  "keywords": [
+    "MERN"
+  ],
+  "author": "Farhan Alam",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/farhanalamansari1/inotebook-backend/issues"
+  },
+  "homepage": "https://github.com/farhanalamansari1/inotebook-backend#readme",
+  "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "cookie-parser": "^1.4.6",
+    "cors": "^2.8.5",
+    "dotenv": "^16.3.1",
+    "express": "^4.18.2",
+    "express-validator": "^7.0.1",
+    "js-cookie": "^3.0.5",
+    "jsonwebtoken": "^9.0.0",
+    "mongoose": "^7.3.0",
+    "react-cookie": "^4.1.1"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.22"
+  }
+}

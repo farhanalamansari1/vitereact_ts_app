@@ -1,0 +1,40 @@
+[
+    {
+        "id":1,
+        "name":"Beast Zinger",
+        "price": 500,
+        "imgUrl":"/imgs/BeastZinger.png"
+    },
+    {
+        "id":2,
+        "name":"Swiss Cheese Sandwich",
+        "price": 750,
+        "imgUrl":"/imgs/SwissSandwich.jpg"
+    },
+    {
+        "id":3,
+        "name":"Tikka Sandwich",
+        "price": 550,
+        "imgUrl":"/imgs/TikkaSandwich.jpg"
+    },
+    {
+        "id":4,
+        "name":"Tikka Pizza",
+        "price": 600,
+        "imgUrl":"/imgs/Tikkapizza.jpg"
+    },
+    {
+        "id":5,
+        "name":"Supreme Pizza",
+        "price": 650,
+        "imgUrl":"/imgs/Supreme.jpg"
+    },
+    {
+        "id":6,
+        "name":"Tex Max pizza",
+        "price": 650,
+        "imgUrl":"/imgs/Texmax.jpg"
+    }
+
+
+]
